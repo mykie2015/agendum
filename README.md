@@ -138,7 +138,7 @@ Recommended titles use `[TYPE] YYYY-MM-DD · one-line decision / action`:
 [WATCH] Monitor: ...
 ```
 
-Agents that create Issues through the API should start from [docs/issue-body-skeleton.md](docs/issue-body-skeleton.md). Those `###` headings must match the form output exactly. The label workflow reads only the first non-empty line under `### 事件类型` and `### 优先级`.
+Agents that create Issues through the API should start from [docs/issue-body-skeleton.md](docs/issue-body-skeleton.md). Those `###` headings must match the form output exactly. The label workflow reads only the first non-empty line under `### Event type` and `### Priority`.
 
 If the decision, the evidence, and the next step cannot be filled in, the signal should not become an Issue yet.
 
@@ -159,7 +159,7 @@ Agendum is designed to consume multiple upstream sources rather than becoming an
 - X discussions from followed accounts
 - Gmail / Outlook newsletters and high-value email
 - Weekly Wisereads
-- 阮一峰《科技爱好者周刊》
+- Ruan Yifeng's weekly (Tech Enthusiast Weekly)
 - Small creative projects and product opportunities
 
 ### Focus

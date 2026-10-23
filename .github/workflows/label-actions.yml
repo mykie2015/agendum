@@ -20,15 +20,15 @@ jobs:
           set -euo pipefail
           body="$(gh issue view "$ISSUE_NUMBER" --repo "$GH_REPO" --json body --jq '.body' | tr -d '\r')"
 
-          # 只取标题下第一行非空内容，避免正文里其它单词误命中
+          # Take only the first non-empty line under the heading, so other words in the body cannot match by accident
           field() {
             printf '%s\n' "$body" | awk -v h="### $1" '
               $0 == h { f = 1; next }
               f && /^### / { exit }
               f && NF { gsub(/^[ \t]+|[ \t]+$/, ""); print; exit }'
           }
-          type="$(field "事件类型" | tr '[:lower:]' '[:upper:]')"
-          prio="$(field "优先级" | tr '[:lower:]' '[:upper:]')"
+          type="$(field "Event type" | tr '[:lower:]' '[:upper:]')"
+          prio="$(field "Priority" | tr '[:lower:]' '[:upper:]')"
 
           all_types=(read research experiment build write post update domain buy watch)
           all_prios=(p0 p1 p2)
@@ -45,10 +45,10 @@ jobs:
                 fi
               done
               ;;
-            *) echo "未识别事件类型: '$type'，跳过类型标签" ;;
+            *) echo "Unrecognized event type: '$type', skipping the type label" ;;
           esac
 
-          # WATCH 类型或 WATCH 优先级：不挂 p 标签，只保证有 watch
+          # WATCH type or WATCH priority: add no p label, only ensure the watch label
           if [ "$type" = "WATCH" ] || [ "$prio" = "WATCH" ]; then
             [[ " ${add[*]-} " == *" watch "* ]] || add+=(watch)
             for x in "${all_prios[@]}"; do
@@ -65,12 +65,12 @@ jobs:
                   fi
                 done
                 ;;
-              *) echo "未识别优先级: '$prio'，跳过优先级标签" ;;
+              *) echo "Unrecognized priority: '$prio', skipping the priority label" ;;
             esac
           fi
 
-          # 编辑后修正旧标签。只移除当前已挂、且本次不会重新添加的标签，
-          # 避免「类型 READ + 优先级 WATCH」时把刚加回的 watch 又删掉。
+          # After an edit, fix stale labels. Remove only labels that are currently set and will not be added again,
+          # so that type READ + priority WATCH does not remove the watch label just added back.
           current="$(gh issue view "$ISSUE_NUMBER" --repo "$GH_REPO" --json labels --jq '.labels[].name')"
           rm_now=()
           for x in "${remove[@]-}"; do

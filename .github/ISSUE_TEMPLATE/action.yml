@@ -1,20 +1,20 @@
 name: Agendum Action
-description: 把经过验证的高价值信号变成一个能在 1 分钟内决定、可执行、可复盘的行动。
-title: "[TYPE] YYYY-MM-DD · 一句话决策 / 行动"
+description: Turn a verified, high-value signal into an action you can decide on in one minute, execute, and review.
+title: "[TYPE] YYYY-MM-DD · one-line decision / action"
 labels:
   - action
 body:
   - type: markdown
     attributes:
       value: |
-        **Decision first.** 顺序 = 决定 → 信任 → 理解 → 行动 → 复盘。
-        普通新闻、普通 Trending、重复信号不要建 Issue；缺任何必填项就改为 WATCH 或不提交。
+        **Decision first.** Order = decide → trust → understand → act → review.
+        Do not open an issue for ordinary news, ordinary trending items, or duplicate signals. If a required field is missing, switch to WATCH or do not submit.
 
-  # ---------- 1. 决定（Decide） ----------
+  # ---------- 1. Decide ----------
   - type: dropdown
     id: action-type
     attributes:
-      label: 事件类型
+      label: Event type
       options: [READ, RESEARCH, EXPERIMENT, BUILD, WRITE, POST, UPDATE, DOMAIN, BUY, WATCH]
     validations:
       required: true
@@ -22,8 +22,8 @@ body:
   - type: dropdown
     id: priority
     attributes:
-      label: 优先级
-      description: P0 今天 / P1 本周 / P2 backlog / WATCH 暂不行动（类型为 WATCH 时选 WATCH）。
+      label: Priority
+      description: "P0 today / P1 this week / P2 backlog / WATCH no action yet (choose WATCH when the type is WATCH)."
       options: [P0, P1, P2, WATCH]
     validations:
       required: true
@@ -31,71 +31,71 @@ body:
   - type: dropdown
     id: effort
     attributes:
-      label: 工作量
+      label: Effort
       options:
-        - XS · 30 分钟以内
-        - S · 1–2 小时
-        - M · 半天～1 天
-        - L · 超过 1 天
+        - XS · under 30 minutes
+        - S · 1–2 hours
+        - M · half a day to 1 day
+        - L · more than 1 day
     validations:
       required: true
 
   - type: textarea
     id: decision
     attributes:
-      label: 核心判断
-      description: 一句话"所以呢"：值不值得、做什么、为什么现在。不是新闻摘要。
-      placeholder: 值得花 2 小时实测 X，因为它直接回答我在 Harness 研究里的 Y 问题。
+      label: Core judgment
+      description: "One \"so what\" sentence: is it worth it, what to do, why now. Not a news summary."
+      placeholder: "Worth 2 hours to test X, because it directly answers my question Y in the harness research."
     validations:
       required: true
 
   - type: textarea
     id: why
     attributes:
-      label: 为什么推荐 / 为什么值得
-      description: 推荐理由 + 投入产出（花多少时间/钱，换来什么，不做的代价）+ 与 GeekJourney 项目/研究的具体关联。
+      label: Why recommended
+      description: "Reason + cost/benefit (time or money in, what comes back, cost of not doing it) + the concrete link to my projects or research."
       placeholder: |
-        - 推荐理由：
-        - 投入：约 X 小时 / $Y
-        - 回报：
-        - 不做的代价 / 时效性：
-        - 关联项目：hnews-radar / Agent Harness / ...
+        - Reason:
+        - Cost: about X hours / $Y
+        - Payoff:
+        - Cost of skipping / timeliness:
+        - Related project: vault-gardener / agent harness / ...
     validations:
       required: true
 
-  # ---------- 2. 信任（Trust） ----------
+  # ---------- 2. Trust ----------
   - type: textarea
     id: evidence
     attributes:
-      label: 证据链
-      description: 每条带链接和发布时间（北京时间）。宣称但未核实的数字必须标注"未核实"。
+      label: Evidence chain
+      description: "Each item with a link and publish time (state the time zone). Claimed but unverified numbers must be marked \"unverified\"."
       value: |
-        - **一手来源**：
-        - **发布时间**：
-        - **独立验证**：
-        - **相关讨论**（HN / X / GitHub）：
-        - **局限 / 反证 / 未核实**：
+        - **Primary source**:
+        - **Published**:
+        - **Independent verification**:
+        - **Related discussion** (HN / X / GitHub):
+        - **Limits / counter-evidence / unverified**:
     validations:
       required: true
 
   - type: input
     id: source
     attributes:
-      label: 发现渠道
-      description: 例如 HN / AIHot / X / Gmail·Newsletter / GitHub / Wisereads / 阮一峰周刊（发现于哪，不等于一手来源）。
+      label: Discovery channel
+      description: "For example HN / AIHot / X / Gmail·Newsletter / GitHub / Wisereads / a weekly newsletter (where it was found, not the primary source)."
     validations:
       required: true
 
-  # ---------- 3. 理解（Understand） ----------
+  # ---------- 3. Understand ----------
   - type: textarea
     id: understanding
     attributes:
-      label: 解读与拆解
-      description: 发生了什么、背景、为什么现在出现；再拆核心机制 / 关键数字 / 可复用的点。
+      label: Interpretation and breakdown
+      description: "What happened, the background, why now; then the core mechanism, key numbers, and reusable points."
       value: |
-        **解读**：
+        **Interpretation**:
 
-        **拆解**：
+        **Breakdown**:
         1.
         2.
         3.
@@ -105,17 +105,17 @@ body:
   - type: textarea
     id: summary
     attributes:
-      label: 总结
-      description: 3 句以内，让没读上面内容的人也能复述。
+      label: Summary
+      description: "At most three sentences, so someone who skipped the sections above can retell it."
     validations:
       required: true
 
-  # ---------- 4. 行动（Act） ----------
+  # ---------- 4. Act ----------
   - type: textarea
     id: next-action
     attributes:
-      label: 下一步
-      description: 具体可执行，禁止"继续关注""有空研究"。
+      label: Next step
+      description: "Concrete and executable. No \"keep watching\" or \"research when free\"."
       value: |
         - [ ]
         - [ ]
@@ -125,44 +125,44 @@ body:
   - type: textarea
     id: done
     attributes:
-      label: 预期结果与完成标准
-      description: 做完得到什么产物；满足什么条件可关闭。
+      label: Expected result and done standard
+      description: "What you get when it is done; which condition allows closing."
       value: |
-        - **预期产物**：
-        - **完成标准**：
+        - **Expected output**:
+        - **Done standard**:
     validations:
       required: true
 
-  # ---------- 5. 复盘（Learn） ----------
+  # ---------- 5. Learn ----------
   - type: textarea
     id: progress
     attributes:
-      label: 进度记录
-      description: 当前状态以最后一行为准（TODO / DOING / BLOCKED / DONE / WATCHING / DROPPED）。
+      label: Progress log
+      description: "Current state is the last row (TODO / DOING / BLOCKED / DONE / WATCHING / DROPPED)."
       value: |
-        | 日期 | 状态 | 进展 |
+        | Date | Status | Progress |
         | --- | --- | --- |
-        | YYYY-MM-DD | TODO | Issue 创建 |
+        | YYYY-MM-DD | TODO | Issue created |
     validations:
       required: true
 
   - type: textarea
     id: result
     attributes:
-      label: 结果 / 复盘
-      description: 做了什么、得到什么、学到什么；失败也要写。
+      label: Result / review
+      description: "What was done, what came out, what was learned. Write failures too."
     validations:
       required: false
 
   - type: dropdown
     id: follow-up
     attributes:
-      label: 后续决策
+      label: Follow-up decision
       options:
-        - KEEP · 继续
-        - DOUBLE DOWN · 加大投入
-        - FOLLOW-UP · 创建后续 Action
-        - WATCH · 转入观察
-        - DROP · 放弃
+        - KEEP · continue
+        - DOUBLE DOWN · invest more
+        - FOLLOW-UP · create a follow-up Action
+        - WATCH · move to watching
+        - DROP · abandon
     validations:
       required: false

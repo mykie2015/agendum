@@ -141,11 +141,11 @@ if "action" not in type_labels:
 expected_types = [label.upper() for label in type_labels if label != "action"]
 got_types = (by_id.get("action-type") or {}).get("attributes", {}).get("options")
 if got_types != expected_types:
-    fail(f"事件类型 options {got_types} != ISSUE_LABELS types {expected_types}")
+    fail(f"Event type options {got_types} != ISSUE_LABELS types {expected_types}")
 
 got_prios = (by_id.get("priority") or {}).get("attributes", {}).get("options")
 if got_prios != ["P0", "P1", "P2", "WATCH"]:
-    fail(f"优先级 options must be P0, P1, P2, WATCH, got {got_prios}")
+    fail(f"Priority options must be P0, P1, P2, WATCH, got {got_prios}")
 
 for item in body:
     if not isinstance(item, dict) or item.get("type") == "markdown":
@@ -187,13 +187,13 @@ def first_value(heading):
                     return follow.strip()
     return ""
 
-if first_value("事件类型") not in got_types:
-    fail("skeleton 事件类型 value is not a dropdown option")
-if first_value("优先级") not in got_prios:
-    fail("skeleton 优先级 value is not a dropdown option")
+if first_value("Event type") not in got_types:
+    fail("skeleton Event type value is not a dropdown option")
+if first_value("Priority") not in got_prios:
+    fail("skeleton Priority value is not a dropdown option")
 effort_options = by_id["effort"]["attributes"]["options"]
-if first_value("工作量") not in effort_options:
-    fail("skeleton 工作量 value is not a dropdown option")
+if first_value("Effort") not in effort_options:
+    fail("skeleton Effort value is not a dropdown option")
 
 if "1 type + 1 priority + 0–3 topic labels" not in labels_md:
     fail("labeling rule must stay 1 type + 1 priority + 0–3 topic labels")
@@ -212,7 +212,7 @@ raw_workflow = workflow_path.read_text()
 if "types: [opened, edited, reopened]" not in raw_workflow:
     fail("workflow must run on opened, edited, and reopened")
 run = workflow["jobs"]["label"]["steps"][0]["run"]
-for needle in ("### $1", "未识别事件类型", "未识别优先级", "WATCH", "watch"):
+for needle in ("### $1", "Unrecognized event type", "Unrecognized priority", "WATCH", "watch"):
     if needle not in run:
         fail(f"workflow script missing {needle}")
 Path("/tmp/label-actions-run.sh").write_text(run if run.endswith("\n") else run + "\n")
@@ -378,16 +378,16 @@ run_case() {
 run_case \
   "WATCH type ignores BUILD READ P0 in the body" \
   "$(cat <<'EOF'
-### 事件类型
+### Event type
 
 WATCH
 BUILD READ P0
 
-### 优先级
+### Priority
 
 WATCH
 
-### 核心判断
+### Core judgment
 
 BUILD READ P0 appears in the prose, and so does README.
 EOF
@@ -401,16 +401,16 @@ EOF
 run_case \
   "READ type keeps read when the body contains README" \
   "$(cat <<'EOF'
-### 事件类型
+### Event type
 
 READ
 README
 
-### 优先级
+### Priority
 
 P2
 
-### 核心判断
+### Core judgment
 
 See the README before any BUILD.
 EOF
@@ -424,16 +424,16 @@ EOF
 run_case \
   "priority P1 is the first line, not a later P0" \
   "$(cat <<'EOF'
-### 事件类型
+### Event type
 
 RESEARCH
 
-### 优先级
+### Priority
 
 P1
 P0
 
-### 核心判断
+### Core judgment
 
 The body also says P0, P2, BUILD, and READ. Priority stays P1.
 EOF
@@ -447,15 +447,15 @@ EOF
 run_case \
   "unknown type and priority are logged and skipped" \
   "$(cat <<'EOF'
-### 事件类型
+### Event type
 
 TRANSLATE
 
-### 优先级
+### Priority
 
 URGENT
 
-### 核心判断
+### Core judgment
 
 README mentions BUILD and P0, which must not become labels.
 EOF
@@ -464,20 +464,20 @@ EOF
   "" \
   "" \
   "p1,read" \
-  "$(printf '%s\n' "未识别事件类型: 'TRANSLATE'，跳过类型标签" "未识别优先级: 'URGENT'，跳过优先级标签")"
+  "$(printf '%s\n' "Unrecognized event type: 'TRANSLATE', skipping the type label" "Unrecognized priority: 'URGENT', skipping the priority label")"
 
 run_case \
   "WATCH priority on UPDATE keeps watch and drops p-labels" \
   "$(cat <<'EOF'
-### 事件类型
+### Event type
 
 UPDATE
 
-### 优先级
+### Priority
 
 WATCH
 
-### 核心判断
+### Core judgment
 
 Observation only. The word P0 in this sentence is not the priority.
 EOF
@@ -491,15 +491,15 @@ EOF
 run_case \
   "WATCH type suppresses a P0 priority line" \
   "$(cat <<'EOF'
-### 事件类型
+### Event type
 
 WATCH
 
-### 优先级
+### Priority
 
 P0
 
-### 核心判断
+### Core judgment
 
 Type WATCH never receives a p-label.
 EOF

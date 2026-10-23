@@ -1,76 +1,76 @@
-<!-- 标题：[TYPE] YYYY-MM-DD · 一句话决策 / 行动
-     API 创建时同时传 labels: action,<type>,<p0|p1|p2>（WATCH 只传 action,watch）
-     下列 ### 标题与表单输出完全一致，不要改名；标题下第一行必须是取值本身。 -->
+<!-- Title: [TYPE] YYYY-MM-DD · one-line decision / action
+     When creating through the API, also pass labels: action,<type>,<p0|p1|p2> (WATCH passes only action,watch).
+     The ### headings below match the form output exactly. Do not rename them; the first line under a heading must be the value itself. -->
 
-### 事件类型
+### Event type
 
 EXPERIMENT
 
-### 优先级
+### Priority
 
 P1
 
-### 工作量
+### Effort
 
-S · 1–2 小时
+S · 1–2 hours
 
-### 核心判断
+### Core judgment
 
-一句话：值不值得、做什么、为什么现在。
+One sentence: is it worth it, what to do, why now.
 
-### 为什么推荐 / 为什么值得
+### Why recommended
 
-- 推荐理由：
-- 投入：约 X 小时 / $Y
-- 回报：
-- 不做的代价 / 时效性：
-- 关联项目：
+- Reason:
+- Cost: about X hours / $Y
+- Payoff:
+- Cost of skipping / timeliness:
+- Related project:
 
-### 证据链
+### Evidence chain
 
-- **一手来源**：[标题](URL)
-- **发布时间**：YYYY-MM-DD HH:MM（北京时间）
-- **独立验证**：[来源](URL)
-- **相关讨论**（HN / X / GitHub）：
-- **局限 / 反证 / 未核实**：
+- **Primary source**: [title](URL)
+- **Published**: YYYY-MM-DD HH:MM (state the time zone)
+- **Independent verification**: [source](URL)
+- **Related discussion** (HN / X / GitHub):
+- **Limits / counter-evidence / unverified**:
 
-### 发现渠道
+### Discovery channel
 
 X
 
-### 解读与拆解
+### Interpretation and breakdown
 
-**解读**：发生了什么、背景、为什么现在出现。
+**Interpretation**: what happened, the background, why now.
 
-**拆解**：
-1. 核心机制
-2. 关键数字
-3. 可复用到我项目的点
+**Breakdown**:
+1. Core mechanism
+2. Key numbers
+3. What carries over to my projects
 
-### 总结
+### Summary
 
-3 句以内。
+At most three sentences.
 
-### 下一步
+### Next step
 
 - [ ] 
 - [ ] 
 
-### 预期结果与完成标准
+### Expected result and done standard
 
-- **预期产物**：
-- **完成标准**：
+- **Expected output**:
+- **Done standard**:
 
-### 进度记录
+### Progress log
 
-| 日期 | 状态 | 进展 |
+| Date | Status | Progress |
 | --- | --- | --- |
-| YYYY-MM-DD | TODO | Issue 创建 |
+| YYYY-MM-DD | TODO | Issue created |
 
-### 结果 / 复盘
+### Result / review
 
 _No response_
 
-### 后续决策
+### Follow-up decision
 
 _No response_
