@@ -10,7 +10,7 @@ action_type: write
 priority: p2
 state: closed
 created: 2026-10-24
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://claude.com/blog/claude-duet }
   - { id: s2, resource: https://www.reddit.com/r/ClaudeAI/comments/1xc6beb/claude_duet_research_preview_what_you_get_what_it/ }
@@ -20,9 +20,14 @@ sources:
 
 Worth 30 minutes to turn the fact check into a short corrected Duet note in the wiki, so later notes stop repeating the overstated wording ("desktop", "continuously monitors", "enterprise").
 
-# Insight
+# Summary
 
 Add the verified facts to `02.wiki/research/claude-duet-launch-pulse.md` and mark what is unverified, so the wiki has one correct source for Duet's scope.
+
+# Used in insights
+
+* [Scope words and multipliers inflate between a vendor's text and its retellings](../insights/launch-claims-inflate-between-source-and-retelling.md)
+* [A proactive agent is defined by where its approval boundary sits and what happens when it fails](../insights/proactive-agents-are-defined-by-their-approval-boundary.md)
 
 # Limits
 

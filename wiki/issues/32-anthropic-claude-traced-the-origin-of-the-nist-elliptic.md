@@ -10,7 +10,7 @@ action_type: read
 priority: p2
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.anthropic.com/research/ecdsa-curve-origins }
 ---
@@ -19,7 +19,7 @@ sources:
 
 Worth reading, mainly as material for writing and research methods. Anthropic officially reports that an internal research model found the origin of the NIST elliptic-curve seeds in under half an hour: the answer is that a 1990s C library random number generator, lrand48, was seeded with Unix timestamps, which explains a question that had puzzled the cryptography community for more than twenty years. The post also discloses the model's thinking at the time: it first suspected it was in a test environment, then ruled out coincidence by direct computation. It is a very concrete first-hand case for understanding both "AI doing research" and "models knowing they may be tested."
 
-# Insight
+# Summary
 
 A cryptographic mystery of more than twenty years was solved by a model in half an hour, and the answer is plain: an old random number generator seeded by timestamps. What is worth taking away is the problem-solving method and the model's self-verification process, with no security action involved.
 

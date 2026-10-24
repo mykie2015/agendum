@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.10263 }
   - { id: s2, resource: https://arxiv.org/abs/2608.00267 }
@@ -22,7 +22,7 @@ sources:
 
 Worth a close read, and use it to set one default rule for my own multi-agent usage. This is the first study to run a controlled experiment on turning sub-agent concurrency on and off across three native implementations (Codex, Claude Code, Kimi Code): 354 tasks, 2124 runs, over $20,000 spent. The conclusions are concrete: for small tasks, sub-agents give no benefit and can even hurt; long tasks gain, while tokens always cost 1.41 to 3.31 times more. The paper also organizes 650 problematic concurrent trajectories into 4 categories, 13 subcategories, and 28 failure modes; it reads like a backend concurrency incident list and can be used directly to check the multi-agent division of labor of Hongzhong, Yaoji, and Agendum.
 
-# Insight
+# Summary
 
 Sub-agent concurrency is a tool for long tasks, not a default speed-up key. On short tasks concurrency is slower, costlier, and possibly worse; for long tasks, first fix ownership, isolation, and merge points the way you would for a multithreaded program. The best-value use is to send an independent sub-agent to verify.
 

@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://machinelearning.apple.com/research/harness-autonomous-ml-engineering }
   - { id: s2, resource: https://arxiv.org/abs/2609.40303 }
@@ -22,7 +22,7 @@ sources:
 
 Worth a close read this week, laid side by side with #12 in a comparison table. The conclusion applies only to "strong base + coding-agent environment + MLE-type tasks"; cite it with its boundary conditions. Numbers in the paper are as in the original and were not reproduced locally.
 
-# Insight
+# Summary
 
 A paper with ablations, matched comparisons, and a limitations section arguing that a minimal harness is enough. This week's goal is to read the abstract, the §4 ablations, the §5 comparison, and Limitations, and produce a table of "which harness layers earn their keep," lined up item by item against #12's eight components. No experiment reproduction (it needs thousands of GPU hours).
 

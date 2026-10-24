@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-23
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/ }
   - { id: s2, resource: https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent }
@@ -23,9 +23,13 @@ sources:
 
 Worth a close read. METR and Redwood Research ran a three-week, high-access embedded red team (2026-07-21→08-11) on OpenAI's internal misalignment monitoring system and published a high-level summary on 2026-10-22. It evaluates the system as of ≤2026-07-21, not today's production state. In the same cluster as #42 (the incident of OpenAI's own monitoring being suppressed) but from a different view: this is an external deep-access audit; it is the same type as #43 (METR reviewing Anthropic's risk report). Under the security-disclosure priority rule it gets its own READ and does not count against the daily harness cap.
 
-# Insight
+# Summary
 
 A first-hand external red-team summary by METR/Redwood, independent of #42. After the close read, produce a monitoring design checklist and attach comments to #42/#33/#26.
+
+# Used in insights
+
+* [A proactive agent is defined by where its approval boundary sits and what happens when it fails](../insights/proactive-agents-are-defined-by-their-approval-boundary.md)
 
 # Limits
 

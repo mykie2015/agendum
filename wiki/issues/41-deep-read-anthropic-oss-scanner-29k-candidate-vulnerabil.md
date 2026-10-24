@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source }
   - { id: s2, resource: https://red.anthropic.com/oss-scanner/ }
@@ -22,9 +22,13 @@ sources:
 
 Worth reading. Anthropic's Frontier Red Team published a set of numbers: in six months models found over 29,000 candidate vulnerabilities, and humans finished reviewing only about 6,000. Their answer is to let qualifying open-source projects opt in to a fast path of "take model reports directly without human review," and let maintainers use a `threat_model.md` file to tell the scanning agent what to test and what counts as severe. The bottleneck moved from "can we find them" to "can humans review them all," the security version of the same thing as #20 (AI agents push the bottleneck to code review) and a continuation of the model-company first-hand disclosures like #37.
 
-# Insight
+# Summary
 
 Models find vulnerabilities accurately enough that Anthropic is stuck on human review, so it lets maintainers choose to take unreviewed reports directly and steers the scanning agent with threat_model.md. What is worth reading is the numbers and the governance design; what is worth borrowing is the threat_model.md format; it can also be combined with #20 into one piece on "the bottleneck in the AI era is verification."
+
+# Used in insights
+
+* [Verification, not generation, is now the bottleneck, and vendors answer by moving the review](../insights/verification-is-the-bottleneck-not-generation.md)
 
 # Limits
 

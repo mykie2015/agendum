@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/ }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50100345 }
@@ -20,7 +20,7 @@ sources:
 
 P1 close read: short, actionable, and it hits the new preference; decide after reading whether to open a separate WRITE.
 
-# Insight
+# Summary
 
 An actionable tutorial from inside Anthropic: ambition is not only being faster but raising the target level, deepening the tooling level, and widening the method level. Worth a close read and turning into a checklist, then deciding whether to write a short piece or X post.
 

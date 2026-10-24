@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-23
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/ }
   - { id: s2, resource: https://www.wearedevelopers.com/events/world-congress-2026-north-america/sessions/1957-2026-in-llms-so-far }
@@ -22,7 +22,7 @@ sources:
 
 Worth a close read. Simon Willison's annotated transcript of his 2026-09-25 WeAreDevelopers closing keynote strings 2026 together on a timeline: coding agents crossing the "usable every day" line, the OpenClaw/Claw (personal agent) category, the rise and fall of Tokenmaxxing, Fable-class models, lab training jailbreak incidents, and the "Deep Blue" professional mindset. It is not yet another harness-shell puff piece but a first-hand practitioner's chronology plus reusable phrasing; it compares directly with Agendum / personal AI / coding agent research. Not counted against the daily harness cap.
 
-# Insight
+# Summary
 
 A 2026 annual calendar talk on coding agents / personal agents. After reading, use its timeline to label my own projects and research, and decide whether to write a comparison long piece on "Deep Blue / judgment" (a suggestion only).
 

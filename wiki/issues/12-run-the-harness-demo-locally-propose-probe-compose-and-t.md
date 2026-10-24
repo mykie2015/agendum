@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.14224 }
   - { id: s2, resource: https://github.com/google-research/harness2 }
@@ -24,7 +24,7 @@ sources:
 
 Worth validating the loop with the local demo this week and extracting a method checklist; full benchmarks and Vertex cost go in a separate issue. The paper's gain numbers are marked "paper tables, not verified locally."
 
-# Insight
+# Summary
 
 This is an open-source, locally demoable framework that recursively edits the harness and makes the editing process itself transferable. This week's goal: get the demo running and extract the Propose–Probe–Compose and library-entry templates into personal harness / JEV notes; do not run JobBench in full.
 

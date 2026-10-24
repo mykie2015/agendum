@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://github.com/strot-ai/Project-STROT }
   - { id: s2, resource: https://pypi.org/project/strot-ai/ }
@@ -22,7 +22,7 @@ sources:
 
 Worth one minimal local experiment this week. STROT synthesizes "classification / routing / scoring" decisions once at compile time with a large model, then at runtime uses a 144M local model (about 60 ms, zero marginal LLM calls) to output typed JSON with confidence. It aims straight at harness cost and the judgment that "an agent should not burn a large model on every record"; Experiment before Build.
 
-# Insight
+# Summary
 
 Not chasing Show HN buzz, but using 1–2 hours to verify whether "decision-type tasks can compile once." Either result is a conclusion; if it fails, close it and record the failure modes.
 

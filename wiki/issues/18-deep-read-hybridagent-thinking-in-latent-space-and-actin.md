@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.18861 }
   - { id: s2, resource: https://github.com/togethercomputer/HybridAgent }
@@ -23,7 +23,7 @@ sources:
 
 Worth a close read this week. Stanford / Together AI / UIUC offer a reproducible architecture that "thinks in latent space and calls tools in text," with open-sourced code and 8B/14B weights. It directly answers how the harness research should split "internal reasoning medium vs external interface"; compare it with #12 Harness² and #14 (minimal coding agent) in the same week, without opening a parallel training project.
 
-# Insight
+# Summary
 
 Not another chase of a latent CoT hot post, but "silent inner thinking + text for external use" written as an open-source comparable agent architecture. Finish reading this week and leave a comparison table; decide on a small inference EXPERIMENT only if a GPU is available.
 

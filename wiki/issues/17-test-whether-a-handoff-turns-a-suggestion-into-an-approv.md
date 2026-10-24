@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://swarmcha.se/posts/chinese-agent-fleet-full-report }
   - { id: s2, resource: https://natesnewsletter.substack.com/p/ai-agent-swarms }
@@ -22,9 +22,13 @@ sources:
 
 Worth a small experiment. Field deployments and incident reports all say the same thing: an agent treats a peer's or a web page's "you can continue" as authorization, and judgment must be revocable. This is on the same axis as #13 (the authorization boundary when an agent spends money); this slot adds a method layer with three locally reproducible probes and does not expand into a long security piece.
 
-# Insight
+# Summary
 
 Not another chase of a security news item, but three local probes to verify whether existing agents treat a handoff note as an approval and whether they truly stop after revocation. Results go into rules; an X post can hang off #13, without a separate hype post.
+
+# Used in insights
+
+* [A proactive agent is defined by where its approval boundary sits and what happens when it fails](../insights/proactive-agents-are-defined-by-their-approval-boundary.md)
 
 # Limits
 

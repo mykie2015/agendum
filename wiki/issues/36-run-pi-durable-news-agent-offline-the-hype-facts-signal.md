@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: closed
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://github.com/disler/pi-durable-news-agent }
   - { id: s2, resource: https://youtu.be/OLqP8jxJ0Wc }
@@ -21,7 +21,7 @@ sources:
 
 Worth running the offline mode locally once and comparing it with Agendum's filtering gates. disler's newly open-sourced pi-durable-news-agent is almost another implementation of Agendum: cron wakes a resumable agent on a schedule, scans 28 sources (including HN and GitHub releases), uses jev for cheap judgments at every gate, merges duplicate stories, takes the top 7 and sends research sub-agents to dig deeper, and finally gives each one three scores: Hype / Facts / Signal. Its "Signal = information you can act on right now" and Agendum's "from signals to things worth doing" are the same goal, and it splits judgment into 6 independent jev commands, which is just right for checking the judgment steps now mixed together in Agendum's single large skill.
 
-# Insight
+# Summary
 
 This is a clearly structured open-source "signal filtering agent" with almost the same goal as Agendum. Run it offline first, look at its 6 small gates and the three-score system, then decide whether Agendum should split one big judgment into several small ones.
 

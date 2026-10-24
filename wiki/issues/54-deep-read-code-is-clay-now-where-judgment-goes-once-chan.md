@@ -10,7 +10,7 @@ action_type: read
 priority: p2
 state: open
 created: 2026-10-22
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.albertodenia.com/writing/code-is-clay-now }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50153531 }
@@ -20,9 +20,13 @@ sources:
 
 Worth reading, as writing material. Alberto Denia's short essay climbed from 94 points in the morning to 183 points / 124 comments by evening on HN, and offers a clear dichotomy for the agentic coding era: Artisan (a human judges every iteration) and Factory (a loop of spec + generator + verifier, with humans only as the backstop). This is not another harness shell but about "where judgment moves," directly relevant to my "judgment stays in human hands." Not counted against the daily harness cap.
 
-# Insight
+# Summary
 
 A methods short that HN pushed up. After reading, classify the agent tasks I have in hand once into Artisan / Factory, seeing which can move to Factory and which must stay in human hands.
+
+# Used in insights
+
+* [Verification, not generation, is now the bottleneck, and vendors answer by moving the review](../insights/verification-is-the-bottleneck-not-generation.md)
 
 # Limits
 

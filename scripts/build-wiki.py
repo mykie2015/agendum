@@ -127,7 +127,7 @@ def page(front, body):
     return "---\n" + "\n".join(front) + "\n---\n\n" + body.rstrip() + "\n"
 
 
-def issue_page(a, at):
+def issue_page(a, at, used_in=()):
     desc = first_sentence(a["judgment"]) or a["headline"]
     front = [
         "type: Agendum Action", f"title: {yq(a['headline'])}", f"description: {yq(desc)}",
@@ -142,7 +142,9 @@ def issue_page(a, at):
             front.append(f"  - {{ id: s{i}, resource: {u} }}")
     b = [f"# Decision\n\n{a['judgment'] or a['headline']}"]
     if a["summary"]:
-        b.append(f"# Insight\n\n{a['summary']}")
+        b.append(f"# Summary\n\n{a['summary']}")
+    if used_in:
+        b.append("# Used in insights\n\n" + "\n".join(f"* [{t}](../insights/{f})" for t, f in used_in))
     if a["limits"]:
         b.append(f"# Limits\n\n{a['limits']}")
     if a["steps"]:
@@ -211,15 +213,48 @@ def bar_svg(title, rows, path, color_open="#4f46e5", color_done="#9ca3af"):
     path.write_text("\n".join(parts) + "\n")
 
 
+def read_insights():
+    """Hand-written insight pages: wiki/insights/*.md with an `issues: [..]` list."""
+    out = []
+    for f in sorted((WIKI / "insights").glob("*.md")):
+        if f.name == "index.md":
+            continue
+        text = f.read_text()
+        title = re.search(r'^title:\s*"?(.*?)"?\s*$', text, re.M)
+        desc = re.search(r'^description:\s*"?(.*?)"?\s*$', text, re.M)
+        nums = re.search(r"^issues:\s*\[(.*?)\]", text, re.M)
+        conf = re.search(r"^confidence:\s*([\w-]+)", text, re.M)
+        out.append({"file": f.name, "title": title.group(1) if title else f.stem, "desc": desc.group(1) if desc else "",
+                    "issues": [int(n) for n in re.findall(r"\d+", nums.group(1))] if nums else [],
+                    "conf": conf.group(1) if conf else "unrated"})
+    return out
+
+
+def link_issue_tokens(actions):
+    """Turn bare [#N] tokens in insight pages into links to the issue pages."""
+    slugs = {a["number"]: a["slug"] for a in actions}
+    for f in (WIKI / "insights").glob("*.md"):
+        text = f.read_text()
+        new = re.sub(r"\[#(\d+)\](?!\()", lambda m: f"[#{m.group(1)}](../issues/{slugs[int(m.group(1))]}.md)" if int(m.group(1)) in slugs else m.group(0), text)
+        if new != text:
+            f.write_text(new)
+
+
 def build(issues):
     at = now_iso()
     actions = sorted((parse(i) for i in issues if i["labels"] and any(l["name"] == "action" for l in i["labels"])), key=lambda a: a["number"])
-    for d in ("issues", "topics", "concepts", "images"):
+    for d in ("issues", "topics", "concepts", "images", "insights"):
         (WIKI / d).mkdir(parents=True, exist_ok=True)
     for old in (WIKI / "issues").glob("*.md"):
         old.unlink()
+    link_issue_tokens(actions)
+    insights = read_insights()
+    used = defaultdict(list)
+    for ins in insights:
+        for n in ins["issues"]:
+            used[n].append((ins["title"], ins["file"]))
     for a in actions:
-        (WIKI / "issues" / f"{a['slug']}.md").write_text(issue_page(a, at))
+        (WIKI / "issues" / f"{a['slug']}.md").write_text(issue_page(a, at, used.get(a["number"], ())))
     by_topic = defaultdict(list)
     for a in actions:
         for t in a["topics"]:
@@ -239,15 +274,23 @@ def build(issues):
         fm = re.search(r"^description:\s*\"?(.*?)\"?\s*$", f.read_text(), re.M)
         concepts.append(f"* [{f.stem.replace('-', ' ').title()}](concepts/{f.name}) - {fm.group(1) if fm else ''}")
     openn = sum(a["state"] == "open" for a in actions)
+    covered = {n for ins in insights for n in ins["issues"]}
     idx = [f'---\nokf_version: "{OKF_VERSION}"\n---\n', "# Agendum wiki\n",
-           f"Insights from {len(actions)} Agendum actions ({openn} open). Built from GitHub issues by `scripts/build-wiki.py`; format: Open Knowledge Format v{OKF_VERSION}.\n",
-           "![Actions by type](images/actions-by-type.svg)\n", "![Actions by topic](images/actions-by-topic.svg)\n",
-           "# Start here\n", "* [Open action queue](queue.md) - open actions by priority with the next step",
-           f"* [All actions](issues/index.md) - one page per issue ({len(actions)})"]
+           f"What the {len(actions)} Agendum actions ({openn} open) add up to. Insight pages make claims across related issues; issue pages are the evidence ledger. Format: Open Knowledge Format v{OKF_VERSION}.\n",
+           "# Insights\n"]
+    idx += [f"* [{i['title']}](insights/{i['file']}) - {i['desc']} (confidence: {i['conf']}; issues: {', '.join('#' + str(n) for n in i['issues'])})" for i in insights] or ["* none yet"]
+    idx += ["", f"Issues not yet synthesized into an insight: {len(actions) - len(covered & {a['number'] for a in actions})} of {len(actions)}. List: [insights/index.md](insights/index.md).\n",
+            "# Evidence and views\n", "* [Open action queue](queue.md) - open actions by priority with the next step",
+            f"* [All actions](issues/index.md) - one page per issue ({len(actions)})"]
     idx += [f"* [{t}](topics/{t}.md) - {len(v)} actions" for t, v in sorted(by_topic.items(), key=lambda kv: -len(kv[1]))]
     if concepts:
         idx += ["", "# Concepts\n"] + concepts
+    idx += ["", "![Actions by type](images/actions-by-type.svg)\n", "![Actions by topic](images/actions-by-topic.svg)"]
     (WIKI / "index.md").write_text("\n".join(idx) + "\n")
+    todo = [a for a in sorted(actions, key=lambda a: ({"p0": 0, "p1": 1, "p2": 2}.get(a["prio"], 3), -a["number"])) if a["number"] not in covered]
+    (WIKI / "insights" / "index.md").write_text("# Insights\n\n" + "\n".join(f"* [{i['title']}]({i['file']}) - {i['desc']}" for i in insights)
+        + "\n\n# Waiting for synthesis\n\nIssues with no insight page yet (open first, by priority):\n\n"
+        + "\n".join(f"* [#{a['number']} {a['headline']}](../issues/{a['slug']}.md) - {a['state']}" for a in todo) + "\n")
     (WIKI / "issues" / "index.md").write_text("# Actions\n\n" + listing(sorted(actions, key=lambda a: -a["number"]), "") + "\n")
 
     log = WIKI / "log.md"

@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-22
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.latent.space/p/claude-mods }
   - { id: s2, resource: https://code.claude.com/docs/en/plugins/mods/reference }
@@ -20,7 +20,7 @@ sources:
 
 Worth a small experiment. A first-hand methods post by swyx / Latent Space: Claude Mods flips the agent harness from "machine-facing" to "human attention-facing": programmable middleware (TS/JS) hooks the prompt/tool/UI and decides what interrupts you and what is shown. It has a built-in `you-should-know` side-channel agent + a self-built ModSmith template, and a comparison can be run on Claude Code in 1–2 hours; it is not yet another TUI wrapper. The open experiments on the same topic do not cover the "human-side Attention Interface / Mods."
 
-# Insight
+# Summary
 
 This week open `you-should-know` in Claude Code, then try one self-built/template mod, and note whether the interruptions help judgment; write the result into harness notes, without expanding into a platform BUILD.
 

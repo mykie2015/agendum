@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://x.com/AnthropicAI/status/2111881963657412903 }
   - { id: s2, resource: https://www.anthropic.com/news/public-benefit-fund }
@@ -23,7 +23,7 @@ sources:
 
 Anthropic has committed an equity path of about 20% to the Public Benefit Fund (starting at 5%, with up to 2% more for each 50% rise in valuation); on the same day Elon countered with "give shares directly to the public / next year one SpaceX share to every child in America." This is first-hand material on AI-company ownership and public-benefit narratives, worth a close read of the official long post and blog, then deciding whether to turn it into a "risk/method" section for the Official Account or a long X post. The topic differs from #15 (the employment report), so they are not merged.
 
-# Insight
+# Summary
 
 One of the highest-quality long governance signals of the window; complementary to the #15 employment report. The goal of this issue is a close read and notes; whether to publish is the user's decision.
 

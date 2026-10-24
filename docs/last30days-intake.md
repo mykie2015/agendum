@@ -31,6 +31,8 @@ Ask four questions in this order. Stop at the first "no".
 
 If the answer to question 1, 3, or 4 is "no", set the type to WATCH or do not create an issue. A quiet result is valid: write `Today: No Action`.
 
+Check tell words against the first-hand text before you quote them: *continuous, always-on, enterprise, desktop, 10x, 40x*. Retellings inflate these (see [wiki/insights/launch-claims-inflate-between-source-and-retelling.md](../wiki/insights/launch-claims-inflate-between-source-and-retelling.md)). Mark anything you cannot trace as "unverified".
+
 Popularity is not value. High likes, stars, or views do not replace a primary source.
 
 ## 3. Map the output to the issue form

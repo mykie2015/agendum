@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-23
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://github.com/tt-a1i/archify }
   - { id: s2, resource: https://archify.si }
@@ -21,7 +21,7 @@ sources:
 
 Worth a real 1–2 hour test. Archify (tt-a1i/archify) is an Agent Skill for Claude Code / Codex / Cursor and others: from natural language or repo evidence it generates a self-contained interactive HTML diagram (architecture/sequence/workflow, etc.) or a "conclusion-first" one-page answer, with validate→deliver→check. About 87K★ (checked via the GitHub API on 2026-10-23), so it is not a <200★ shell. It links back to md2wechat / content visualization / Agent Skills (#58); under Experiment before Build, get one run working first and then decide whether to bring it into daily use.
 
-# Insight
+# Summary
 
 A high-star Agent Skill built for inspectable diagrams and one-page answers. Run it for 1–2 hours on a real plan or repo of mine, then decide whether it stays in the toolbox.
 

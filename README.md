@@ -287,19 +287,26 @@ Strategic thesis
 
 ---
 
-## Wiki: insight from every issue
+## Wiki: what the issues add up to
 
-`wiki/` is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) (v0.2) bundle built from the issues. Each issue becomes one concept page with its decision, insight, limits, next steps, result, and sources. Topic digests, a priority queue, and two charts come from the same data. Start at [wiki/index.md](wiki/index.md).
+`wiki/` is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) (v0.2) bundle. Its point is **insight**, not a record of the workflow. Start at [wiki/index.md](wiki/index.md).
+
+- **Insight pages** (`wiki/insights/`) are the product. Each one makes a claim across one or more related issues, and gives the evidence with its strength, the tension, what to do, what would change my mind, and the gaps. They are written, not extracted, and they start as `status: draft` with a stated `confidence`.
+- **Issue pages** (`wiki/issues/`) are the evidence ledger: decision, summary, limits, next steps, result. They are generated from the issues and link back to the insights that use them.
+- **Views**: topic digests, the open-action queue, an `insights/index.md` list of issues that still wait for synthesis, and two charts.
+- **Concepts** (`wiki/concepts/`) hold hand-written fact sheets and diagrams, for example the Claude Duet verified-scope table for #62.
 
 ```bash
-python3 scripts/build-wiki.py   # fetch issues with gh and rewrite wiki/
+python3 scripts/build-wiki.py   # fetch issues with gh and rewrite generated pages
 python3 scripts/check-wiki.py   # check OKF v0.2 conformance
 ```
 
-- Generated: `wiki/issues/`, `wiki/topics/`, `wiki/queue.md`, `wiki/index.md`, `wiki/log.md`, `wiki/images/actions-by-*.svg`.
-- Hand-written (never overwritten): `wiki/concepts/` and `wiki/images/issue-*.svg`.
-- `.github/workflows/build-wiki.yml` rebuilds the wiki whenever an issue changes.
-- Generated pages state `generated.by: process:agendum-wiki/1` and carry no `verified` key. They are unverified until a person reviews them.
+To add an insight, create `wiki/insights/<claim>.md` with `type: Insight`, an `issues: [..]` list, and `confidence`. Write `[#N]` in the body and the build turns it into a link to the issue page. A good insight states a claim someone could disagree with, shows evidence from at least one issue, names a counter-case, and ends with an action. A page that only restates what an issue did is not an insight.
+
+- Generated: `wiki/issues/`, `wiki/topics/`, `wiki/queue.md`, `wiki/index.md`, `wiki/insights/index.md`, `wiki/log.md`, `wiki/images/actions-by-*.svg`.
+- Never overwritten: `wiki/insights/<claim>.md`, `wiki/concepts/`, `wiki/images/issue-*.svg`.
+- `.github/workflows/build-wiki.yml` rebuilds the generated pages whenever an issue changes.
+- Pages state who produced them and carry no `verified` key, so they are unverified until a person reviews them.
 
 ---
 
@@ -314,7 +321,7 @@ agendum/
 ├── docs/
 │   ├── issue-body-skeleton.md
 │   └── last30days-intake.md
-├── wiki/                 (OKF bundle built from issues)
+├── wiki/                 (OKF bundle: insights, issue ledger, concepts)
 ├── scripts/
 │   ├── build-wiki.py
 │   └── check-wiki.py

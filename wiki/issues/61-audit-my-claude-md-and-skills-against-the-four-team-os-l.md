@@ -10,7 +10,7 @@ action_type: experiment
 priority: p2
 state: open
 created: 2026-10-24
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://x.com/aakashgupta/status/2113701998092853595 }
   - { id: s2, resource: https://www.reddit.com/r/ProductManagement/comments/1xcxt2e/what_are_pms_actually_using_ai_for/ }
@@ -21,7 +21,7 @@ sources:
 
 Worth a 1–2 hour audit of my own agent setup against the four "Team OS" layers (thin CLAUDE.md, connections, skills, PR rollout). Do not adopt the pattern wholesale yet: the claim has one practitioner source and no public template.
 
-# Insight
+# Summary
 
 One practitioner reports that a shared repo with a thin CLAUDE.md and shared skills works for product teams. The evidence is thin, so the cheap move is to audit my own setup against the four layers and measure the effect.
 

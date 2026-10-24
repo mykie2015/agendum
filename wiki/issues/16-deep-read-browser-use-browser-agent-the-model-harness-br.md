@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://browser-use.com/posts/browser-agents }
   - { id: s2, resource: https://aihot.news/items/w3vpc68lufgj57zcy1hd38a60 }
@@ -20,7 +20,7 @@ sources:
 
 Worth reading. Browser Use uses first-hand cloud usage data to split a browser agent into three parts, model, harness, and browser, and gives selection boundaries among API / script / agent. It forms an "application layer" counterpart to the minimal harness (#14) and Harness² (#12), and directly serves the Agent + Computer Use main line.
 
-# Insight
+# Summary
 
 Browser Use turns computer use from a slogan into a comparable trio plus a failure list. After reading, produce a one-page guardrail rather than rushing to hook up a cloud agent. Compared with #12/#14: those edit harness files; this one defines where the browser session sits in the harness.
 

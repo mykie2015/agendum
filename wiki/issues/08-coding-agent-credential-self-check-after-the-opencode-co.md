@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://x.com/opencode/status/2111519637049319818 }
   - { id: s2, resource: https://x.com/lydiahallie/status/2111563956666110287 }
@@ -21,7 +21,7 @@ sources:
 
 Worth an immediate XS self-check: do the coding agents on this machine or in the cloud (OpenCode Console, Claude Code, Codex, Cursor, etc.) still store plaintext API keys that a third-party console could reuse, and are usage caps set? OpenCode officially admitted that a subset of Console leaked and is remediating with Anthropic/OpenAI/Google; Anthropic has said it revoked Claude keys believed affected. Details are not public, but the "credential boundary" is enough to make a closable small experiment.
 
-# Insight
+# Summary
 
 The incident details are not complete, but the credential boundary is enough for a 30-minute self-check experiment. When done it should leave a reusable checklist, not stop at forwarding the official post.
 

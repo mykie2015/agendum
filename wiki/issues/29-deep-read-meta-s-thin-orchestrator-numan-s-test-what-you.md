@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/ }
   - { id: s2, resource: https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith }
@@ -22,7 +22,7 @@ sources:
 
 Worth a close read and one self-check. Meta's engineering blog distills production-agent experience into one transferable rule: the "dumber" the orchestrator, the more reliable it is; routing and gates are all deterministic, and domain reasoning goes into context-isolated specialist subagents. Numan's first-hand retrospective gives the other half of the same structure (a supervisor + specialist subagents) from the evaluation side: evaluation must run on the same graph that runs in production, and the scarce asset is the evaluation standard, not the prompt. Read together, they are a good basis for a health check of the skill / routine structure of Agendum and the digital employees.
 
-# Insight
+# Summary
 
 Keep the orchestration layer thin and deterministic and leave domain judgment to isolated specialist agents; run evaluation on what actually ships and look at it by category. Together the two articles are a checklist for a health check of a personal agent system.
 

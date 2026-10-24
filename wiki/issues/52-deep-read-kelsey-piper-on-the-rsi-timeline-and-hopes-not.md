@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-22
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.theargumentmag.com/p/what-i-saw-inside-anthropic }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50185430 }
@@ -20,7 +20,7 @@ sources:
 
 Worth a close read. Kelsey Piper (The Argument) attended Anthropic's SF headquarters' public colloquium in person (without signing an NDA) and wrote about RSI from first-hand observation: the rising tier of Claude's roles in internal work, the test curve for bioweapon uplift, Jack Clark's "RSI may be reachable next year," and the company's tension in being unable to articulate a "positive vision" and a weak policy lobbying effort. It is not an official Anthropic paper but a high-quality first-hand visit report; against the existing #47 Amodei "race to the top" nine items, the angle is **the RSI progress narrative and the governance gap**, not another safety checklist.
 
-# Insight
+# Summary
 
 Read closely and extract three blocks of notes: "internal role-tier dashboard + RSI policy levers + comparison with #47"; do not open an RSI self-built evaluation repo based on it this week.
 

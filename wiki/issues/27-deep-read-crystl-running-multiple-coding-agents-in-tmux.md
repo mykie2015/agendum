@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://crystl.dev/guides/tmux-for-ai-agents/ }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50148855 }
@@ -20,7 +20,7 @@ sources:
 
 Worth a close read this week, pulling out a reusable operations checklist. This is a methods article that puts "multiple Claude Code / coding-agent sessions" onto tmux primitives: the built-in `--worktree --tmux` path, session/window naming, scripted `send-keys`/`capture-pane`, status-bar polling for monitoring, and it states the limits of tmux plainly (no agent state, brittle screen scraping, no cross-session sharing). It directly serves multi-session operation for Agent Harness / Coding Agent and is not just another hot post.
 
-# Insight
+# Summary
 
 Not chasing HN scores, but spending under two hours to get an operating boundary for "how to keep multiple coding agents running." After reading you should be able to say when `claude --tmux` is enough and when to stop using the screen-scraping hack.
 

@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-22
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://claude.com/blog/claude-duet }
   - { id: s2, resource: https://aihot.news/items/jgg0i29t3o1eycc24c3wev0fx }
@@ -20,9 +20,14 @@ sources:
 
 Worth a close read. Anthropic's first-hand research preview of a proactive personal agent: it reaches out to you and keeps working in the background, but must wait for a human to approve before sending, paying, signing, or deleting. The safety stack is spelled out (trustworthy agents, Managed Agents credentials, the auto mode classifier, browser-use injection defense, a sensitive-information classifier). It ties directly to "judgment stays in human hands" and the personal AI / agent + computer-use main line; it is not a pure model drop.
 
-# Insight
+# Summary
 
 Not another chat shell, but a first-hand design post where Anthropic ships "act proactively + wait for human approval on key actions" as a research preview. Read it closely this week, extract the gate checklist, and compare with #44/#16/#17; don't rush to join the waitlist for a BUILD.
+
+# Used in insights
+
+* [Scope words and multipliers inflate between a vendor's text and its retellings](../insights/launch-claims-inflate-between-source-and-retelling.md)
+* [A proactive agent is defined by where its approval boundary sits and what happens when it fails](../insights/proactive-agents-are-defined-by-their-approval-boundary.md)
 
 # Limits
 

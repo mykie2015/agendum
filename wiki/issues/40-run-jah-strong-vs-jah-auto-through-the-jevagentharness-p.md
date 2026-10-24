@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.21412 }
   - { id: s2, resource: https://github.com/JevAgentHarness/JevAgentHarness }
@@ -21,7 +21,7 @@ sources:
 
 Worth a small experiment. JevAgentHarness (JAH for short) puts a Jev-style "decision model" inside a local OpenAI-compatible proxy: at every step the coding agent takes, a small model first asks "is this step routine or hard?"; routine steps go to a cheap model and hard ones stay with the strong model, with no change to the harness itself. Both the paper and the README report the failing configurations too: when the price gap is not large enough, or the strong model is already fully using the prompt cache, it saves almost nothing or is even slower. That answers "should my own coding agent use tiered routing?", and running jah-strong against jah-auto once is more useful than reading a few more routing articles.
 
-# Insight
+# Summary
 
 Tiered routing can save money, provided the unit price gap between the two tiers is large and the strong model is not already made cheap by caching. JAH lays out both positive and negative results, and it is a local proxy that does not change the harness. Run jah-strong vs jah-auto once on one small task of your own, look at the strong-model share and the cost, and that decides whether routing goes into the daily coding-agent workflow.
 

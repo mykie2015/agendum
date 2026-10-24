@@ -10,7 +10,7 @@ action_type: post
 priority: p2
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://x.com/elonmusk/status/2111612315204272233 }
   - { id: s2, resource: https://x.com/mikepat711/status/2111452223838224866 }
@@ -24,9 +24,13 @@ sources:
 
 Worth letting the user decide within 48 hours whether to post one. Priority P2: a content action that does not block the experiments in #1 to #12.
 
-# Insight
+# Summary
 
 The platform publicly recommends "screenshot the card to the agent," which is the moment for the user to teach the authorization boundary from first-hand practice. This issue is only one X post (or a short thread); the viewpoint and wording are the user's call, and the agent does not post on their behalf.
+
+# Used in insights
+
+* [A proactive agent is defined by where its approval boundary sits and what happens when it fails](../insights/proactive-agents-are-defined-by-their-approval-boundary.md)
 
 # Limits
 

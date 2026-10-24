@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://x.com/DarioAmodei/status/2112732230124818891 }
 ---
@@ -19,7 +19,7 @@ sources:
 
 Deep read: Dario Amodei's "race to the top" reply: nine commercially costly safety actions
 
-# Insight
+# Summary
 
 Dario answers the external criticism that "Anthropic talks safety but races in practice" with nine high-cost safety actions; the core is that "a race to the top only has leverage if you're at the frontier." The goal of a close read is to extract a comparable safety decision table and the RSP/regulation positions, not to chase buzz.
 

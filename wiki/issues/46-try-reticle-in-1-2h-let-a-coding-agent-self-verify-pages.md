@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://github.com/reticlehq/reticle }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50163896 }
@@ -21,7 +21,7 @@ sources:
 
 Try Reticle in 1–2h: let a coding agent self-verify pages with JEV-style runtime perception
 
-# Insight
+# Summary
 
 Reticle is a high-star self-verification layer for agents that explicitly bills itself as JEV. This issue only asks for a 1–2 hour minimal comparison: run one "change a page → runtime self-verification" loop on your own coding-agent stack and record whether it is worth keeping as a default step.
 

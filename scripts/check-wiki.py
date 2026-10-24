@@ -29,10 +29,11 @@ for f in sorted(WIKI.rglob("*.md")):
             t = re.search(r"^type:\s*(.+)$", fm, re.M)
             if not t or not t.group(1).strip():
                 errors.append(f"{rel}: empty type")
-            for ts in re.findall(r"\bat:\s*([^\s,}]+)|last_modified:\s*([^\s,}]+)", fm):
-                value = ts[0] or ts[1]
-                if not ISO.fullmatch(value):
-                    errors.append(f"{rel}: timestamp without offset: {value}")
+            for ts in re.findall(r"\b(?:at|last_modified):[ \t]*([^\s,}]*)", fm):
+                if not ISO.fullmatch(ts):
+                    errors.append(f"{rel}: bad or empty timestamp: {ts!r}")
+            if rel.parts[0] == "insights" and f.name != "index.md" and not re.search(r"^issues:\s*\[\s*\d", fm, re.M):
+                errors.append(f"{rel}: an insight must list its issues")
     elif f.name == "index.md" and f.parent != WIKI and text.startswith("---"):
         errors.append(f"{rel}: only the root index.md may carry frontmatter")
     for target in re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", text):

@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://karrisaarinen.com/posts/someone-behind-the-software/ }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50142573 }
@@ -20,9 +20,13 @@ sources:
 
 Linear co-founder Karri Saarinen's short essay frames "agents turn everyone into a small software factory" as a product problem: each individual change is reasonable, and together they become Frankenstein. This sits on the same axis as the user's "judgment stays in human hands" and "don't promote content automation," so it is worth a close read, then deciding whether to write it into the Official Account's "method/risk" section or attach it to #15/#20 as contrast material.
 
-# Insight
+# Summary
 
 One of the highest-quality evening pieces on product × agents methodology; the goal is a close read and notes, and whether to publish is the user's call.
+
+# Used in insights
+
+* [Verification, not generation, is now the bottleneck, and vendors answer by moving the review](../insights/verification-is-the-bottleneck-not-generation.md)
 
 # Limits
 

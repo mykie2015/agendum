@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://x.com/andrew_jennings/status/2111819180265685324 }
   - { id: s2, resource: https://x.com/KHendersonCo/status/2111934799237816687 }
@@ -21,7 +21,7 @@ sources:
 
 Two million-impression deep long posts in the same window: `@andrew_jennings` uses 11 acquisition cases to argue that "big companies often buy challenger brands to protect the parent brand, not for growth"; `@KHendersonCo` takes a lawyer's view and breaks down five earnout rules (control, incentive flip, accounting definitions, litigation, protective clauses). For indie developers/creators negotiating "selling a company, negotiating contingent consideration," the method value is high. Per the 2026-10-19 preference: deep long posts must get an issue.
 
-# Insight
+# Summary
 
 The pair that best fits "deep long posts must get an issue" this period. Merged into one READ to avoid opening two issues on the same topic.
 

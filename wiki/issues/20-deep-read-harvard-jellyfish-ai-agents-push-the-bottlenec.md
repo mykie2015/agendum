@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://fion.ac/jellyfish.pdf }
   - { id: s2, resource: https://fion.ac/ }
@@ -22,9 +22,13 @@ sources:
 
 Worth a close read this week (P1): it turns "can't keep up with reading/reviewing" from anecdote into a cross-company measured result, directly serving both the harness and writing lines.
 
-# Insight
+# Summary
 
 Company-level evidence from 718 companies shows that AI agents' coding gains get stuck at code review. This week it is worth a close read of the PDF to extract metrics that transfer to harness / personal agent evaluation, rather than treating it as macro employment news.
+
+# Used in insights
+
+* [Verification, not generation, is now the bottleneck, and vendors answer by moving the review](../insights/verification-is-the-bottleneck-not-generation.md)
 
 # Limits
 

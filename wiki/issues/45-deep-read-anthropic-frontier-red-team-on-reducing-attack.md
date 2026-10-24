@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.anthropic.com/research/attack-surface-reduction }
 ---
@@ -19,7 +19,7 @@ sources:
 
 Deep read: Anthropic Frontier Red Team on reducing attack surface with Claude (three methods + the OpenSSH case)
 
-# Insight
+# Summary
 
 Anthropic demonstrated three attack-surface-reduction methods with Claude on 25 projects (493 findings), and used OpenSSH 10.4→10.6 to show it can be merged upstream. How to read it: extract the "default/interaction/early reachability" checklist and compare it with your own agent permissions and default tool surface; cross-reference details with #41, and do not open a parallel Scanner experiment.
 

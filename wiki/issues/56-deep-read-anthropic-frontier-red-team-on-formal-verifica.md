@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-23
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.anthropic.com/research/formal-verification }
   - { id: s2, resource: https://x.com/AnthropicAI/status/2113390212911083894 }
@@ -21,9 +21,13 @@ sources:
 
 Worth a close read. First-hand research from Anthropic's Frontier Red Team (2026-10-22): working with Theorem, Claude wrote Rocq proofs at the RISC-V assembly level for 239 entry points across 123 OSS-Fuzz libraries (about 180 million lines), proving that under the stated assumptions no input under 64MB crashes the program; along the way it found bugs that had escaped for years (including a large-input OOB and a rediscovery of a libexpat CVE). Under the #15/#37 rule it is an OpenAI/Anthropic first-hand security and engineering methods long post and gets priority, not counted against the daily harness cap.
 
-# Insight
+# Summary
 
 A first-hand Anthropic security/engineering long post. After the close read, produce a method-boundary note and decide whether to follow a single-entry-point trial run or only watch the skill.
+
+# Used in insights
+
+* [Verification, not generation, is now the bottleneck, and vendors answer by moving the review](../insights/verification-is-the-bottleneck-not-generation.md)
 
 # Limits
 

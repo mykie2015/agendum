@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://every.to/p/why-we-replaced-personal-agents-with-one-for-the-whole-company }
 ---
@@ -19,9 +19,13 @@ sources:
 
 Deep read: Every moves from a fleet of personal agents to one shared company agent: sessions, connections, permissions
 
-# Insight
+# Summary
 
 Every deleted 86K lines to get a shared agent and wrote down three designs for conversations, connections, and permissions. What is worth reading is how the assumptions fail and putting the hard gate in code; it can be compared with personal agent authorization (#13) and the allow-rule experiment (#17), and there is no need to follow into building a company product.
+
+# Used in insights
+
+* [A proactive agent is defined by where its approval boundary sits and what happens when it fails](../insights/proactive-agents-are-defined-by-their-approval-boundary.md)
 
 # Limits
 

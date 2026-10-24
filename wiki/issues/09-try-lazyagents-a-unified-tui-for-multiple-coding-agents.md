@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://github.com/rogeriojunior31/lazyagents }
   - { id: s2, resource: https://rogeriojunior31.github.io/en/docs/lazyagents/ }
@@ -22,7 +22,7 @@ sources:
 
 Worth about 30–60 minutes to install Lazyagents (v0.2.2), run `lazyagents doctor` against the Claude Code / Codex / OpenCode (if any) already on this machine, then try the Skills / Sessions / Usage pages in the TUI: can you see cross-agent skill toggles, session lists, and usage at a glance? This is the smallest verifiable slice of a "daily operations surface for multiple coding agents." It builds no harness and only judges whether the management layer is worth keeping.
 
-# Insight
+# Summary
 
 Lazyagents is a small, installable indie TUI that covers the coding agents the user commonly runs. Spend under an hour verifying whether "doctor + the three pages" is actually good, then decide whether to keep it, instead of merely bookmarking a Show HN.
 

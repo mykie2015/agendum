@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: closed
 created: 2026-10-16
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://research.meta.ai/blog/muse-spark-open }
   - { id: s2, resource: https://pytorch.org/blog/muse-spark-open/ }
@@ -26,7 +26,7 @@ sources:
 
 Worth testing on a real coding task instead of chasing leaderboards: the result directly decides whether it enters the default harness.
 
-# Insight
+# Summary
 
 Muse Spark Open turns "open-weight coding agent base" from a slogan into something you can test in two hours. The real question is whether, on one real task, its step count, human intervention, cost, and reliability can approach Claude/Codex. The answer decides whether it enters your default toolchain, and it is also material for a harness article with first-hand data.
 

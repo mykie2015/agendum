@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/ }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50145507 }
@@ -20,7 +20,7 @@ sources:
 
 Worth a minimal "run your own LLM proxy" experiment: point at least one path (Claude Code / Codex / Cursor, etc.) at a proxy you control and confirm whether you can see which key, which client, which model, and cache hits/failures. This directly serves harness cost and the #8 credential boundary; Experiment before Build.
 
-# Insight
+# Summary
 
 Spend 1–2 hours checking whether "seeing the calls" changes your judgment about the harness and costs; whether it runs or fails, leave a clear yes/no.
 

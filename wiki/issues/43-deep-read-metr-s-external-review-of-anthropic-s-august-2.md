@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://metr.org/blog/2026-10-20-misalignment-risk-report-august-2026-review/ }
 ---
@@ -19,7 +19,7 @@ sources:
 
 Deep read: METR's external review of Anthropic's August 2026 Risk Report on "high-stakes misalignment"
 
-# Insight
+# Summary
 
 METR broadly agrees that the catastrophic misalignment risk of Anthropic's models at the time is still low, but disagrees that "the existing evaluation and monitoring arguments are enough." What is worth reading is the way it dissects Claim 1, the monitoring red team, and the prompt-dependent report review, and it can be read together with #42 to form a pair: "self-reported incident + external review."
 

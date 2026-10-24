@@ -10,7 +10,7 @@ action_type: write
 priority: p2
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.anthropic.com/research/employment-at-anthropic }
   - { id: s2, resource: https://www.anthropic.com/research/ai-expectations-gap }
@@ -22,9 +22,13 @@ sources:
 
 Worth writing, but set at P2: this is writing material, not an experiment that must happen this week. When writing, avoid the anxious "AI replaces programmers" narrative and land on "how to design attention entry points and how to keep judgment in human hands."
 
-# Insight
+# Summary
 
 A first-hand, organization-level report with concrete numbers, suited as the factual base of a retrospective piece. This item only recommends writing; the core viewpoint, title, and personal experience are the user's call. Every number in the text must be checked against the original and labeled as Anthropic's self-reported data.
+
+# Used in insights
+
+* [Verification, not generation, is now the bottleneck, and vendors answer by moving the review](../insights/verification-is-the-bottleneck-not-generation.md)
 
 # Limits
 

@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-17
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://deskmind.dev/zh/blog/launch/ }
   - { id: s2, resource: https://github.com/deskmind-ai/brain }
@@ -22,7 +22,7 @@ sources:
 
 Worth one minimal local experiment (start Brain, watch probabilistic decisions and escalation), not worth reproducing the $600 training this week. First write "the option space includes ask-the-user + completion is checked against state" into the personal harness checklist.
 
-# Insight
+# Summary
 
 DeskMind gives an executable path: a small decision model plus writing "ask the user / verify completion" into the harness's option space, instead of only piling on prompts. This week's goal is not to reproduce the full training but to start the Brain service locally, get one `/v1/systemone` call working, and note how the ask/verify interface carries over to a personal harness.
 

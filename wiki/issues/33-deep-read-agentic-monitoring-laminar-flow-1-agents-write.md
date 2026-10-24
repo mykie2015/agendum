@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://benjamincongdon.me/blog/2026/10/19/Agentic-Monitoring/ }
   - { id: s2, resource: https://laminar.sh/blog/flow-1 }
@@ -23,7 +23,7 @@ sources:
 
 Worth a close read, plus a comparison against Agendum itself. Two first-hand sources approach the same thing from both ends: using agents to watch systems and to watch other agents. Ben Congdon's practice piece gives a structural conclusion: a pure agent loop is not the best form of monitoring; better to have the agent write a spec for "how to monitor" and let a deterministic system run that spec. Laminar's Launch HN gives the other half: treat one agent trace as a code repository and each span (one model call or tool call) as a file, and let a small model grep, read, and conclude like a coding agent. This is the same line as #29 Meta's thin orchestrator, "deterministic routing + a few steps that need judgment."
 
-# Insight
+# Summary
 
 Agents watching systems and watching agents are already usable; the key is the division of labor: the agent writes the "what to watch" spec and explains anomalies, while a deterministic program executes the spec and keeps the records. Laminar applies this division to agent traces and pushes the unit price low enough to run on everything. For Agendum, the smallest landing is a one-page monitoring spec plus a check script.
 

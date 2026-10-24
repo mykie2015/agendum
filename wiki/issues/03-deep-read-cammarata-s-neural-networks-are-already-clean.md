@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-16
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://x.com/nickcammarata/status/2110757819427574056 }
   - { id: s2, resource: https://already-clean.goodfire.com/ }
@@ -20,7 +20,7 @@ sources:
 
 Worth a close read to bank the method: "blind maximum"-style falsifiable evaluation and the agent research loop can be borrowed directly into your Agent Evaluation / RSI research.
 
-# Insight
+# Summary
 
 This is the most substantial long read of the day: someone who supplied the superposition evidence himself overturns his earlier conclusion with agent-scale experiments. The most valuable part for you is not interpretability itself but the method: an agent-run research loop plus falsifiable evaluation (blind maximum), which transfers directly to Agent Evaluation / RSI research and writing.
 

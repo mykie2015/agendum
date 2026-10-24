@@ -10,7 +10,7 @@ action_type: read
 priority: p2
 state: open
 created: 2026-10-23
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation }
   - { id: s2, resource: https://agentskills.io }
@@ -21,7 +21,7 @@ sources:
 
 Worth one read. A first-hand Anthropic product/standards announcement (2026-10-22): the Agent Skills open standard is donated to the Agentic AI Foundation (AAIF) under the Linux Foundation, including the name/logo/GitHub org/agentskills.io. 70+ platforms have integrated it (including ChatGPT, Cursor, Copilot, VS Code); roughly 1 million skills and about 280 million installs to date. It links back to md2wechat-skill and my personal agent skill ecosystem and is not pure model-release noise.
 
-# Insight
+# Summary
 
 A first-hand Anthropic standards donation. After a short read, decide whether md2wechat-skill / my personal skills need a metadata or release-notes revision to follow the AAIF roadmap.
 

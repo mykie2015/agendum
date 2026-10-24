@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://x.com/RihardJarc/status/2112562002958692392 }
   - { id: s2, resource: https://x.com/elonmusk/status/2112603906723487744 }
@@ -20,7 +20,7 @@ sources:
 
 Worth a READ; not worth opening an EXPERIMENT right away (no numbers runnable in 1–2h). If writing content, use the layered list and do not rehash Elon's punchline.
 
-# Insight
+# Summary
 
 What spread at the million level is a **layered explainer of the compute bottleneck**, not a model release. After reading you should take away: the bottleneck is data-center space and power plus reliability engineering, and multi-agent stacks are handing simple tasks to open source.
 

@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-17
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.20344 }
   - { id: s2, resource: https://geyuyao.com/doc2harness/ }
@@ -24,7 +24,7 @@ sources:
 
 Worth a close read to extract failure modes, not worth running the full benchmark this week: first turn "how to split cross-cutting modules and how to prevent vacuous passes" into an executable checklist.
 
-# Insight
+# Summary
 
 This is the first hard yardstick that evaluates harness engineering ability, rather than coding on a fixed harness. The goal of a close read is not to reproduce all 328 cases, but to extract failure modes and positive-control ideas that transfer to a personal harness checklist.
 

@@ -3,7 +3,7 @@ type: Topic Digest
 title: "product"
 description: "4 actions tagged product (4 open)."
 tags: [product]
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 ---
 
 # Actions tagged product

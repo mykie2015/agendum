@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: closed
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.22987 }
   - { id: s2, resource: https://ctxsec.com/context }
@@ -21,9 +21,13 @@ sources:
 
 Worth a self-check right away: list every "don't ask again" allow-rule already approved in my Claude Code and Codex, and narrow or delete the ones that are too broad. The new paper From Approval to Abuse shows that a poisoned repository can, during a normal task, induce a coding agent to ask you for a rule that sounds reasonable but has a very wide actual scope; approve it once and malicious commands matching that rule no longer prompt. This hits exactly the gate of "judgment stays in human hands": a human in the loop only works if the human knows what they are approving.
 
-# Insight
+# Summary
 
 A coding agent's "don't ask again" is a long-lived authorization that repo content can manipulate indirectly. The cheapest defense is to inventory the existing rules now and from here on approve only single commands in other people's repos.
+
+# Used in insights
+
+* [A proactive agent is defined by where its approval boundary sits and what happens when it fails](../insights/proactive-agents-are-defined-by-their-approval-boundary.md)
 
 # Limits
 

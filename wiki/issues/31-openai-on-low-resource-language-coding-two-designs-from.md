@@ -10,7 +10,7 @@ action_type: read
 priority: p2
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://openai.com/index/low-resource-programming-languages }
   - { id: s2, resource: https://aihot.news/items/tzuiybo7a45sm87wj4rec2mvo }
@@ -20,7 +20,7 @@ sources:
 
 Worth one read, focusing on the evaluation design. OpenAI officially says its new model improves greatly on low-resource languages such as COBOL, Fortran, and Visual Basic, and open-sourced MultiLangBench. For someone with a backend architecture background, the two evaluation designs are more valuable than the scores: using a database file as a unified cross-language interface for grading, and requiring byte-for-byte identical output for a migration task to count as a success. Both tricks can be borrowed when building my own agent evaluations.
 
-# Insight
+# Summary
 
 The scores are OpenAI's self-report, so treat them as reference only; what is worth taking away is the two evaluation designs: grade across languages through a reference implementation, and catch behavior drift with byte-for-byte equality.
 

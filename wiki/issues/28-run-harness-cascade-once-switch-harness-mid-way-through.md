@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://ykwon0407.github.io/posts/harness-cascade/ }
   - { id: s2, resource: https://github.com/ykwon0407/harness-cascade }
@@ -22,7 +22,7 @@ sources:
 
 Worth a small experiment. James Zou's Stanford group open-sourced Harness Cascade: on the same task, one harness runs the first N turns, writes a handoff summary, and another harness continues in the same workspace. Paper-level data shows that switching harnesses can cut cost and raise accuracy at the same time, using exactly the DeepSeek V4.1 Flash from #7. Running "solo vs handoff" once on a small bug of your own answers "should my daily coding agent be fixed to one?" better than reading more harness articles.
 
-# Insight
+# Summary
 
 Switching harnesses is not mysticism: a short summary replacing a long history saves money, and a second pair of eyes checking against the files catches errors. Treat the accuracy gain with care; the cost gain is steadier. Running solo vs handoff once on a real small bug is enough to decide whether to write "periodic handoff / restart" into your own coding-agent habits.
 

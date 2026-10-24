@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://github.com/xerj-org/xerj }
   - { id: s2, resource: https://xerj.org }
@@ -22,9 +22,13 @@ sources:
 
 Worth 1–2 hours to index one of my own small or mid-sized repos with xerj (Apache-2.0) on this machine, then run the same coding-agent task twice: "default grep / read files" versus "retrieval through xerj/MCP." Record only local output tokens / wall-clock time / whether it passed acceptance. The goal is not to chase stars but to check the harness/cost proposition "is a retrieval layer cheaper than switching models?" Any marketing "40×" claim is not adopted; go by the official case study's 2.7× and the numbers measured here.
 
-# Insight
+# Summary
 
 xerj deserves one A/B on my own repo, using local numbers to decide whether a retrieval middle layer joins the default coding-agent stack, and refusing to treat trending multiples as conclusions.
+
+# Used in insights
+
+* [Scope words and multipliers inflate between a vendor's text and its retellings](../insights/launch-claims-inflate-between-source-and-retelling.md)
 
 # Limits
 

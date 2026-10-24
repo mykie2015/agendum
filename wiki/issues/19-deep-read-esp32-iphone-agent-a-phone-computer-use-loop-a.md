@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
 sources:
   - { id: s1, resource: https://github.com/onehumanbeing/esp32-iphone-agent }
   - { id: s2, resource: https://github.com/onehumanbeing/esp32-iphone-agent/blob/main/README.md }
@@ -26,7 +26,7 @@ sources:
 
 Worth a close read this week. A $7 ESP32-S3 acts as the AirPlay eyes and the USB HID hands, and the agent runs on the same iPhone, with no Mac, jailbreak, or developer account needed; the repo already has a run export so another agent can review the run. It fills the "phone computer use beyond Browser Agent (#16)" comparison directly, without buying the board first and without a BUILD.
 
-# Insight
+# Summary
 
 Not chasing the weekly's hot tool list, but adding a computer-use harness sample on a physical device. First read the loop and limits clearly, then decide whether to spend about seven dollars on one minimal real-device task.
 
