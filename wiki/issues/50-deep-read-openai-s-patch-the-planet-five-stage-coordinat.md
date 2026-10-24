@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-22
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/ }
   - { id: s2, resource: https://www.wiz.io/blog/php2shell-php-rce }

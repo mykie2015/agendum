@@ -3,7 +3,7 @@ type: Topic Digest
 title: "agent"
 description: "55 actions tagged agent (48 open)."
 tags: [agent]
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 ---
 
 # Actions tagged agent

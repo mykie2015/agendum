@@ -2,7 +2,7 @@
 type: Report
 title: "Open action queue"
 description: "54 open actions by priority, with the first unchecked step."
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 ---
 
 # P1 (46)

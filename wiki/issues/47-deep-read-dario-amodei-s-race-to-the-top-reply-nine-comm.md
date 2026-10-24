@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://x.com/DarioAmodei/status/2112732230124818891 }
 ---

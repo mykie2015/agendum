@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://machinelearning.apple.com/research/harness-autonomous-ml-engineering }
   - { id: s2, resource: https://arxiv.org/abs/2609.40303 }
@@ -25,6 +25,11 @@ Worth a close read this week, laid side by side with #12 in a comparison table. 
 # Summary
 
 A paper with ablations, matched comparisons, and a limitations section arguing that a minimal harness is enough. This week's goal is to read the abstract, the §4 ablations, the §5 comparison, and Limitations, and produce a table of "which harness layers earn their keep," lined up item by item against #12's eight components. No experiment reproduction (it needs thousands of GPU hours).
+
+# Used in insights
+
+* [Where harness changes do raise accuracy, the mechanism is an independent check against real state](../insights/accuracy-gains-come-from-an-independent-second-look.md)
+* [At a strong base model, the harness is mostly a cost lever, not an accuracy lever](../insights/harness-is-a-cost-lever-at-a-strong-base.md)
 
 # Limits
 

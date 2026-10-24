@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://github.com/reticlehq/reticle }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50163896 }

@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://ykwon0407.github.io/posts/harness-cascade/ }
   - { id: s2, resource: https://github.com/ykwon0407/harness-cascade }
@@ -25,6 +25,11 @@ Worth a small experiment. James Zou's Stanford group open-sourced Harness Cascad
 # Summary
 
 Switching harnesses is not mysticism: a short summary replacing a long history saves money, and a second pair of eyes checking against the files catches errors. Treat the accuracy gain with care; the cost gain is steadier. Running solo vs handoff once on a real small bug is enough to decide whether to write "periodic handoff / restart" into your own coding-agent habits.
+
+# Used in insights
+
+* [Where harness changes do raise accuracy, the mechanism is an independent check against real state](../insights/accuracy-gains-come-from-an-independent-second-look.md)
+* [At a strong base model, the harness is mostly a cost lever, not an accuracy lever](../insights/harness-is-a-cost-lever-at-a-strong-base.md)
 
 # Limits
 

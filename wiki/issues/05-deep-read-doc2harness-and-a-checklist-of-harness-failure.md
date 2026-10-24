@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-17
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.20344 }
   - { id: s2, resource: https://geyuyao.com/doc2harness/ }
@@ -27,6 +27,11 @@ Worth a close read to extract failure modes, not worth running the full benchmar
 # Summary
 
 This is the first hard yardstick that evaluates harness engineering ability, rather than coding on a fixed harness. The goal of a close read is not to reproduce all 328 cases, but to extract failure modes and positive-control ideas that transfer to a personal harness checklist.
+
+# Used in insights
+
+* [Where harness changes do raise accuracy, the mechanism is an independent check against real state](../insights/accuracy-gains-come-from-an-independent-second-look.md)
+* [At a strong base model, the harness is mostly a cost lever, not an accuracy lever](../insights/harness-is-a-cost-lever-at-a-strong-base.md)
 
 # Next steps
 

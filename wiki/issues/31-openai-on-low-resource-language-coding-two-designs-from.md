@@ -10,7 +10,7 @@ action_type: read
 priority: p2
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://openai.com/index/low-resource-programming-languages }
   - { id: s2, resource: https://aihot.news/items/tzuiybo7a45sm87wj4rec2mvo }

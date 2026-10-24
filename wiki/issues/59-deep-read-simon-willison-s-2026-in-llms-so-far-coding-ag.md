@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-23
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/ }
   - { id: s2, resource: https://www.wearedevelopers.com/events/world-congress-2026-north-america/sessions/1957-2026-in-llms-so-far }

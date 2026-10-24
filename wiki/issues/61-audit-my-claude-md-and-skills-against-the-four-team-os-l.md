@@ -10,7 +10,7 @@ action_type: experiment
 priority: p2
 state: open
 created: 2026-10-24
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://x.com/aakashgupta/status/2113701998092853595 }
   - { id: s2, resource: https://www.reddit.com/r/ProductManagement/comments/1xcxt2e/what_are_pms_actually_using_ai_for/ }

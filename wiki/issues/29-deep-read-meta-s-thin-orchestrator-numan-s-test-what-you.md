@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/ }
   - { id: s2, resource: https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith }
@@ -25,6 +25,10 @@ Worth a close read and one self-check. Meta's engineering blog distills producti
 # Summary
 
 Keep the orchestration layer thin and deterministic and leave domain judgment to isolated specialist agents; run evaluation on what actually ships and look at it by category. Together the two articles are a checklist for a health check of a personal agent system.
+
+# Used in insights
+
+* [At a strong base model, the harness is mostly a cost lever, not an accuracy lever](../insights/harness-is-a-cost-lever-at-a-strong-base.md)
 
 # Limits
 

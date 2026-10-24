@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions }
   - { id: s2, resource: https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/ }

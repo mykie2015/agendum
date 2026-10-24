@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: closed
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.22987 }
   - { id: s2, resource: https://ctxsec.com/context }

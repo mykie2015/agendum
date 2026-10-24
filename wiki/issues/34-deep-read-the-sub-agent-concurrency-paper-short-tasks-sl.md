@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-20
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.10263 }
   - { id: s2, resource: https://arxiv.org/abs/2608.00267 }
@@ -25,6 +25,11 @@ Worth a close read, and use it to set one default rule for my own multi-agent us
 # Summary
 
 Sub-agent concurrency is a tool for long tasks, not a default speed-up key. On short tasks concurrency is slower, costlier, and possibly worse; for long tasks, first fix ownership, isolation, and merge points the way you would for a multithreaded program. The best-value use is to send an independent sub-agent to verify.
+
+# Used in insights
+
+* [Where harness changes do raise accuracy, the mechanism is an independent check against real state](../insights/accuracy-gains-come-from-an-independent-second-look.md)
+* [At a strong base model, the harness is mostly a cost lever, not an accuracy lever](../insights/harness-is-a-cost-lever-at-a-strong-base.md)
 
 # Limits
 

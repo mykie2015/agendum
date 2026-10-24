@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-21
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://x.com/RihardJarc/status/2112562002958692392 }
   - { id: s2, resource: https://x.com/elonmusk/status/2112603906723487744 }

@@ -10,7 +10,7 @@ action_type: read
 priority: p1
 state: open
 created: 2026-10-19
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://x.com/AnthropicAI/status/2111881963657412903 }
   - { id: s2, resource: https://www.anthropic.com/news/public-benefit-fund }

@@ -10,7 +10,7 @@ action_type: read
 priority: p2
 state: open
 created: 2026-10-22
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://joshuamorris.info/notes/2026/10/13/a-markdown-file-should-just-open/ }
   - { id: s2, resource: https://news.ycombinator.com/item?id=50192254 }

@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: closed
 created: 2026-10-16
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://research.meta.ai/blog/muse-spark-open }
   - { id: s2, resource: https://pytorch.org/blog/muse-spark-open/ }

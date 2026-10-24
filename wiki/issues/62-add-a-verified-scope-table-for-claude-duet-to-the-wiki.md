@@ -10,7 +10,7 @@ action_type: write
 priority: p2
 state: closed
 created: 2026-10-24
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://claude.com/blog/claude-duet }
   - { id: s2, resource: https://www.reddit.com/r/ClaudeAI/comments/1xc6beb/claude_duet_research_preview_what_you_get_what_it/ }

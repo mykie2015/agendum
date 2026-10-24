@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://arxiv.org/abs/2610.14224 }
   - { id: s2, resource: https://github.com/google-research/harness2 }
@@ -27,6 +27,11 @@ Worth validating the loop with the local demo this week and extracting a method 
 # Summary
 
 This is an open-source, locally demoable framework that recursively edits the harness and makes the editing process itself transferable. This week's goal: get the demo running and extract the Propose–Probe–Compose and library-entry templates into personal harness / JEV notes; do not run JobBench in full.
+
+# Used in insights
+
+* [Where harness changes do raise accuracy, the mechanism is an independent check against real state](../insights/accuracy-gains-come-from-an-independent-second-look.md)
+* [At a strong base model, the harness is mostly a cost lever, not an accuracy lever](../insights/harness-is-a-cost-lever-at-a-strong-base.md)
 
 # Limits
 

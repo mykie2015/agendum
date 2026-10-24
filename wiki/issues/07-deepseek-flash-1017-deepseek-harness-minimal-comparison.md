@@ -10,7 +10,7 @@ action_type: experiment
 priority: p1
 state: open
 created: 2026-10-18
-generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:41:17+08:00 }
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:47:18+08:00 }
 sources:
   - { id: s1, resource: https://api-docs.deepseek.com/zh-cn/updates/ }
   - { id: s2, resource: https://github.com/deepseek-ai/deepseek-harness }
@@ -30,6 +30,7 @@ The actionable edge of Flash-1017 is harness co-optimization and a time-limited 
 
 # Used in insights
 
+* [At a strong base model, the harness is mostly a cost lever, not an accuracy lever](../insights/harness-is-a-cost-lever-at-a-strong-base.md)
 * [Scope words and multipliers inflate between a vendor's text and its retellings](../insights/launch-claims-inflate-between-source-and-retelling.md)
 
 # Limits
