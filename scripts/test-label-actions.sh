@@ -211,6 +211,11 @@ if "docs/last30days-intake.md" not in readme:
     fail("README must link docs/last30days-intake.md")
 if not Path("docs/last30days-intake.md").is_file():
     fail("docs/last30days-intake.md is missing")
+if "wiki/index.md" not in readme:
+    fail("README must link wiki/index.md")
+for needed in ("scripts/build-wiki.py", "scripts/check-wiki.py", ".github/workflows/build-wiki.yml"):
+    if not Path(needed).is_file():
+        fail(f"{needed} is missing")
 
 raw_workflow = workflow_path.read_text()
 if "types: [opened, edited, reopened]" not in raw_workflow:

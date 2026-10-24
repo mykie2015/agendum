@@ -1,0 +1,37 @@
+---
+type: Topic Digest
+title: "harness"
+description: "27 actions tagged harness (24 open)."
+tags: [harness]
+generated: { by: process:agendum-wiki/1, at: 2026-10-24T08:34:53+08:00 }
+---
+
+# Actions tagged harness
+
+* [#61 Audit my CLAUDE.md and skills against the four Team OS layers](../issues/61-audit-my-claude-md-and-skills-against-the-four-team-os-l.md) - Worth a 1–2 hour audit of my own agent setup against the four "Team OS" layers (thin CLAUDE.md, connections, skills, PR rollout).
+* [#51 Try Claude Mods in 1–2h: turn the harness into a human-side Attention Interface](../issues/51-try-claude-mods-in-1-2h-turn-the-harness-into-a-human-si.md) - Worth a small experiment.
+* [#40 Run jah-strong vs jah-auto through the JevAgentHarness proxy: does tiered routing save money on my tasks](../issues/40-run-jah-strong-vs-jah-auto-through-the-jevagentharness-p.md) - Worth a small experiment.
+* [#38 Deep read: Redact on WhatsApp help pages hiding LLM instructions (don't suggest regulators / don't mention GDPR)](../issues/38-deep-read-redact-on-whatsapp-help-pages-hiding-llm-instr.md) - Worth a close read of Redact's first-hand investigation: WhatsApp's help center buried instructions meant only for the support AI in the source of public pages…
+* [#37 Deep read: OpenAI's published agent overreach incident reports: the model replaced authorization with its own "harmless" judgment](../issues/37-deep-read-openai-s-published-agent-overreach-incident-re.md) - Worth a close read this week of OpenAI Alignment's public "Misalignment Reports and Notices" directory: first read the Sepolia wallet report in full, then pick…
+* [#35 Inventory and narrow the "don't ask again" allow-rules of Claude Code / Codex](../issues/35-inventory-and-narrow-the-don-t-ask-again-allow-rules-of.md) - Worth a self-check right away: list every "don't ask again" allow-rule already approved in my Claude Code and Codex, and narrow or delete the ones that are too…
+* [#34 Deep read: the sub-agent concurrency paper: short tasks slower and costlier, only long tasks pay off; set one default rule](../issues/34-deep-read-the-sub-agent-concurrency-paper-short-tasks-sl.md) - Worth a close read, and use it to set one default rule for my own multi-agent usage.
+* [#33 Deep read: Agentic Monitoring + Laminar flow-1: agents write monitoring specs, deterministic execution, traces queried like a repo](../issues/33-deep-read-agentic-monitoring-laminar-flow-1-agents-write.md) - Worth a close read, plus a comparison against Agendum itself.
+* [#30 Deep read: Stanford HAI medical agent benchmark + the StarSkirmish cheating incident: evaluation must look at what the agent actually did](../issues/30-deep-read-stanford-hai-medical-agent-benchmark-the-stars.md) - Worth a close read.
+* [#29 Deep read: Meta's thin orchestrator + Numan's "test what you ship": a health check for my own agent system](../issues/29-deep-read-meta-s-thin-orchestrator-numan-s-test-what-you.md) - Worth a close read and one self-check.
+* [#28 Run Harness Cascade once: switch harness mid-way through the same bug, compare cost and result](../issues/28-run-harness-cascade-once-switch-harness-mid-way-through.md) - Worth a small experiment.
+* [#27 Deep read: crystl, running multiple coding agents in tmux, methods and ceiling](../issues/27-deep-read-crystl-running-multiple-coding-agents-in-tmux.md) - Worth a close read this week, pulling out a reusable operations checklist.
+* [#26 Minimal observability with your own LLM proxy: can agent/harness calls be seen?](../issues/26-minimal-observability-with-your-own-llm-proxy-can-agent.md) - Worth a minimal "run your own LLM proxy" experiment: point at least one path (Claude Code / Codex / Cursor, etc.) at a proxy you control and confirm whether yo…
+* [#22 Run STROT locally: a compile-once decision pipeline, testing a zero-marginal-cost runtime](../issues/22-run-strot-locally-a-compile-once-decision-pipeline-testi.md) - Worth one minimal local experiment this week.
+* [#20 Deep read: Harvard/Jellyfish, AI agents push the bottleneck to code review](../issues/20-deep-read-harvard-jellyfish-ai-agents-push-the-bottlenec.md) - Worth a close read this week (P1): it turns "can't keep up with reading/reviewing" from anecdote into a cross-company measured result, directly serving both th…
+* [#19 Deep read: ESP32 iPhone Agent, a phone computer-use loop and run export, compared with #16](../issues/19-deep-read-esp32-iphone-agent-a-phone-computer-use-loop-a.md) - Worth a close read this week.
+* [#18 Deep read: HybridAgent, thinking in latent space and acting in text, against harness boundaries](../issues/18-deep-read-hybridagent-thinking-in-latent-space-and-actin.md) - Worth a close read this week.
+* [#17 Test whether a handoff turns a suggestion into an approval: can permissions really be revoked](../issues/17-test-whether-a-handoff-turns-a-suggestion-into-an-approv.md) - Worth a small experiment.
+* [#16 Deep read: Browser Use "Browser Agent": the Model / Harness / Browser trio and failure modes](../issues/16-deep-read-browser-use-browser-agent-the-model-harness-br.md) - Worth reading.
+* [#14 Deep read: Apple/EPFL "how much harness does a strong base need": a minimal coding agent vs #12 Harness²](../issues/14-deep-read-apple-epfl-how-much-harness-does-a-strong-base.md) - Worth a close read this week, laid side by side with #12 in a comparison table.
+* [#12 Run the Harness² demo locally: Propose–Probe–Compose and the improvement library](../issues/12-run-the-harness-demo-locally-propose-probe-compose-and-t.md) - Worth validating the loop with the local demo this week and extracting a method checklist; full benchmarks and Vertex cost go in a separate issue.
+* [#11 Deep read: RuleTrek, multi-file rule-reasoning evaluation and agent failure modes](../issues/11-deep-read-ruletrek-multi-file-rule-reasoning-evaluation.md) - Worth a close read to extract evaluation design and failure modes; no full reproduction by default this week (few ★, expensive per run).
+* [#7 DeepSeek Flash-1017 × DeepSeek Harness minimal comparison](../issues/07-deepseek-flash-1017-deepseek-harness-minimal-comparison.md) - Worth 1–2 hours for a minimal "same model, different harness" comparison: run the same small task with DeepSeek-V4.1-Flash-1017 on DeepSeek Harness (≥0.2.1-rc.…
+* [#6 Run DeskMind Brain locally: Jev-style decisions + harness co-training comparison](../issues/06-run-deskmind-brain-locally-jev-style-decisions-harness-c.md) - Worth one minimal local experiment (start Brain, watch probabilistic decisions and escalation), not worth reproducing the $600 training this week.
+* [#5 Deep read: Doc2Harness and a checklist of harness failure modes](../issues/05-deep-read-doc2harness-and-a-checklist-of-harness-failure.md) - Worth a close read to extract failure modes, not worth running the full benchmark this week: first turn "how to split cross-cutting modules and how to prevent…
+* [#3 Deep read: Cammarata's "Neural Networks Are Already Clean" and the agent research-evaluation method](../issues/03-deep-read-cammarata-s-neural-networks-are-already-clean.md) - Worth a close read to bank the method: "blind maximum"-style falsifiable evaluation and the agent research loop can be borrowed directly into your Agent Evalua…
+* [#2 Anthropic Code Review methodology post + GA boundaries](../issues/02-anthropic-code-review-methodology-post-ga-boundaries.md) - After code writing speeds up, review is the bottleneck.

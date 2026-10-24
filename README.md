@@ -287,6 +287,22 @@ Strategic thesis
 
 ---
 
+## Wiki: insight from every issue
+
+`wiki/` is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) (v0.2) bundle built from the issues. Each issue becomes one concept page with its decision, insight, limits, next steps, result, and sources. Topic digests, a priority queue, and two charts come from the same data. Start at [wiki/index.md](wiki/index.md).
+
+```bash
+python3 scripts/build-wiki.py   # fetch issues with gh and rewrite wiki/
+python3 scripts/check-wiki.py   # check OKF v0.2 conformance
+```
+
+- Generated: `wiki/issues/`, `wiki/topics/`, `wiki/queue.md`, `wiki/index.md`, `wiki/log.md`, `wiki/images/actions-by-*.svg`.
+- Hand-written (never overwritten): `wiki/concepts/` and `wiki/images/issue-*.svg`.
+- `.github/workflows/build-wiki.yml` rebuilds the wiki whenever an issue changes.
+- Generated pages state `generated.by: process:agendum-wiki/1` and carry no `verified` key. They are unverified until a person reviews them.
+
+---
+
 ## Repository structure
 
 ```text
@@ -298,6 +314,10 @@ agendum/
 ├── docs/
 │   ├── issue-body-skeleton.md
 │   └── last30days-intake.md
+├── wiki/                 (OKF bundle built from issues)
+├── scripts/
+│   ├── build-wiki.py
+│   └── check-wiki.py
 ├── reports/
 │   └── YYYY/
 │       └── MM/

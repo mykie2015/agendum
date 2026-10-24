@@ -1,0 +1,36 @@
+name: Build Agendum wiki
+
+on:
+  issues:
+    types: [opened, edited, closed, reopened, labeled]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: build-wiki
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the OKF wiki from issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/build-wiki.py
+      - name: Check OKF conformance
+        run: python3 scripts/check-wiki.py
+      - name: Commit changes
+        run: |
+          git config user.name "agendum-wiki"
+          git config user.email "agendum-wiki@users.noreply.github.com"
+          git add wiki
+          git diff --cached --quiet || git commit -m "wiki: rebuild from issues"
+          git push

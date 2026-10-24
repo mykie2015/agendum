@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-label="Claude Duet: pasted claims versus verified scope">
+<style>text{font:13px -apple-system,Segoe UI,sans-serif;fill:#1f2937}.h{font-weight:600;font-size:16px}.s{font-size:12px;fill:#6b7280}.w{fill:#b91c1c}.ok{fill:#047857}</style>
+<rect width="760" height="360" fill="#ffffff"/>
+<text class="h" x="20" y="30">Claude Duet: pasted claim vs verified scope</text>
+<text class="s" x="20" y="48">Checked 2026-10-24 against Anthropic's launch post and launch coverage. Issue #62.</text>
+<rect x="20" y="64" width="330" height="26" fill="#fee2e2"/><text x="30" y="82" class="h">Pasted summary</text>
+<rect x="400" y="64" width="340" height="26" fill="#d1fae5"/><text x="410" y="82" class="h">Verified</text>
+<g>
+<text x="30" y="118" class="w">cloud and desktop agent</text><text x="410" y="118" class="ok">iOS, Android, and web (claude.ai)</text><text x="410" y="134" class="s">no desktop app is named</text>
+<text x="30" y="166" class="w">continuously monitors tools</text><text x="410" y="166" class="ok">morning brief, then checks every few hours</text><text x="410" y="182" class="s">checks count against plan limits</text>
+<text x="30" y="214" class="w">enterprise workflows</text><text x="410" y="214" class="ok">research preview, US Pro and Max, waitlist</text><text x="410" y="230" class="s">Team and Enterprise not included yet</text>
+<text x="30" y="262" class="ok">Opus 5.5, approval before send/pay/sign/delete</text><text x="410" y="262" class="ok">matches the coverage</text>
+<text x="30" y="310" class="w">VentureBeat as source</text><text x="410" y="310" class="w">not found: unverified</text><text x="410" y="326" class="s">"schedules jobs" is also unconfirmed</text>
+</g>
+<path d="M360 112 L392 112 M360 160 L392 160 M360 208 L392 208 M360 304 L392 304" stroke="#9ca3af" stroke-width="2" marker-end="none"/>
+</svg>
