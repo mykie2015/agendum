@@ -207,6 +207,10 @@ if "docs/issue-body-skeleton.md" not in readme:
     fail("README must link the issue body skeleton")
 if ".github/ISSUE_LABELS.md" not in readme:
     fail("README must link .github/ISSUE_LABELS.md")
+if "docs/last30days-intake.md" not in readme:
+    fail("README must link docs/last30days-intake.md")
+if not Path("docs/last30days-intake.md").is_file():
+    fail("docs/last30days-intake.md is missing")
 
 raw_workflow = workflow_path.read_text()
 if "types: [opened, edited, reopened]" not in raw_workflow:

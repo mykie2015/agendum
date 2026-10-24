@@ -22,6 +22,8 @@ The goal is simple:
 Signals
   HN · AIHot · X · GitHub · Newsletters · Ideas
                          ↓
+         /last30days <topic>   (first step: collect)
+                         ↓
                     Aggregate
                          ↓
                  Deduplicate / Cluster
@@ -43,7 +45,7 @@ Agendum sits after the information radars and before the work itself.
 
 | Layer | Role |
 | --- | --- |
-| **Radar** | Find signals worth looking at |
+| **Radar** | Find signals worth looking at. Start with `/last30days <topic>` |
 | **Agendum** | Decide which signals deserve attention and action |
 | **GitHub Issues** | Turn decisions into a visible action queue |
 | **Projects / Content / Experiments** | Produce the real-world outcome |
@@ -147,6 +149,8 @@ If the decision, the evidence, and the next step cannot be filled in, the signal
 ## Research inputs
 
 Agendum is designed to consume multiple upstream sources rather than becoming another news feed.
+
+**First step: `/last30days <topic>`.** It pulls Reddit, X, YouTube, HN, GitHub, and the web for the last 30 days. Agendum triages that output and turns the few items that pass into issues. See [docs/last30days-intake.md](docs/last30days-intake.md).
 
 ### Core
 
@@ -291,6 +295,9 @@ agendum/
 ├── assets/
 │   └── readme/
 │       └── hero.svg
+├── docs/
+│   ├── issue-body-skeleton.md
+│   └── last30days-intake.md
 ├── reports/
 │   └── YYYY/
 │       └── MM/
